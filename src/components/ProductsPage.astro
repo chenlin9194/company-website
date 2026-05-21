@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from './ProductCard.astro';
+import { useTranslations, type Locale } from '../i18n';
+
+export interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const categories = t.raw('products.categories') as Array<{
+  id: string; name: string; desc: string; specs?: string[]; applications?: string[];
+}>;
+const processSteps = t.raw('products.process.steps') as Array<{ step: string; title: string; desc: string }>;
+---
+
+<Layout locale={locale} title={t.t('products.title')}>
+  <!-- Page Header -->
+  <section class="bg-gradient-to-br from-primary-500 to-primary-700 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t.t('products.title')}</h1>
+      <p class="text-gray-200 text-lg">{t.t('products.subtitle')}</p>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="bg-gray-50">
+    <div class="container-section">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.map((cat, i) => (
+          <ProductCard
+            name={cat.name}
+            description={cat.desc}
+            specs={cat.specs}
+            applications={cat.applications}
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Flow -->
+  <section class="bg-white">
+    <div class="container-section">
+      <h2 class="section-title">{t.t('products.process.title')}</h2>
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          {processSteps.map((step) => (
+            <div class="text-center relative">
+              <div class="w-16 h-16 bg-primary-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-md">
+                {step.step}
+              </div>
+              <h3 class="font-semibold text-primary-500 mb-2">{step.title}</h3>
+              <p class="text-sm text-gray-500">{step.desc}</p>
+              {step.step !== '05' && (
+                <div class="hidden md:block absolute top-8 -right-3 text-accent-400 text-2xl">→</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

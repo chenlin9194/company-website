@@ -1,0 +1,170 @@
+{
+  "site": {
+    "title": "Hengli Precision Spring & Stamping Manufacturer",
+    "description": "Professional R&D and manufacturing of precision springs, stamping contacts, and custom elastic components",
+    "company": "Hengli Precision Spring & Stamping Co., Ltd."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact Us",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "Precision Elastic Components Expert",
+      "subtitle": "20 years dedicated to R&D and manufacturing of precision springs, stamping contacts, and custom-shaped elastic components — delivering high-quality solutions for global clients",
+      "cta": "View Products",
+      "cta2": "About Us"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "items": [
+        {"title": "Precision Manufacturing", "desc": "Japanese & German precision forming equipment, tolerance control to ±0.01mm, meeting the most demanding industrial requirements"},
+        {"title": "Quality Assurance", "desc": "ISO 9001 / IATF 16949 certified, full traceability, 99.8%+ shipment pass rate"},
+        {"title": "Fast Delivery", "desc": "Samples in 3-5 days for standard products, bulk orders in 7-15 days, rush orders supported"},
+        {"title": "Custom Development", "desc": "One-stop service from drawing review to mass production, free engineering evaluation, design optimization assistance"}
+      ]
+    },
+    "products": {
+      "title": "Product Lines",
+      "subtitle": "Full-category precision manufacturing capabilities covering springs, contacts, and custom elastic components",
+      "categories": [
+        {"name": "Compression Springs", "desc": "Wire diameter 0.1-20mm, from micro to large compression springs for automotive, electronics, and machinery"},
+        {"name": "Tension Springs", "desc": "Constant tension and high fatigue life solutions, custom loop configurations available"},
+        {"name": "Torsion Springs", "desc": "Precision torque control for valves, switches, clutches, and various torsion applications"},
+        {"name": "Custom-Shaped Springs", "desc": "Non-standard elastic component customization, developed from customer drawings or samples"},
+        {"name": "Stamping Contacts", "desc": "Precision stamping contacts, contact clips, EMI shielding springs for connectors and electronics"}
+      ]
+    },
+    "about": {
+      "title": "About Us",
+      "desc": "Founded in 2005, our facility covers 8,000㎡ with 120+ precision machines and annual capacity exceeding 200 million parts. Products are exported to 30+ countries and regions, serving Fortune 500 companies as a qualified supplier.",
+      "cta": "Learn More"
+    },
+    "cta": {
+      "title": "Need Elastic Component Solutions?",
+      "desc": "Get a free engineering evaluation and quotation — our engineers will contact you within 24 hours",
+      "button": "Inquire Now"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Focused on precision elastic component manufacturing, trusted by quality",
+    "intro": {
+      "title": "Company Profile",
+      "p1": "Hengli Precision Spring & Stamping Co., Ltd. was founded in 2005, headquartered in Dongguan City, Guangdong Province. We are a professional precision elastic component manufacturer integrating R&D, production, and sales. Our facility covers 8,000 square meters with over 200 employees, including 30+ engineering technicians.",
+      "p2": "Since our establishment, we have adhered to the philosophy of 'innovation as life, quality as survival', continuously introducing advanced production equipment and inspection instruments from domestic and international sources to enhance our manufacturing capability and quality standards.",
+      "p3": "With an annual capacity exceeding 200 million parts, our products are widely used in automotive manufacturing, 3C electronics, home appliances, medical devices, and new energy sectors, exported to 30+ countries and regions worldwide."
+    },
+    "milestones": {
+      "title": "Milestones",
+      "items": [
+        {"year": "2005", "event": "Company founded, leasing 1,200㎡ facility, starting spring processing business"},
+        {"year": "2010", "event": "Purchased 3,000㎡ factory, introduced automatic spring coiler production lines"},
+        {"year": "2015", "event": "ISO 9001 certified, expanded into overseas markets"},
+        {"year": "2018", "event": "Facility expanded to 8,000㎡, obtained IATF 16949 automotive certification"},
+        {"year": "2021", "event": "Introduced MIM metal injection molding technology, expanded precision parts business"},
+        {"year": "2025", "event": "Annual capacity exceeded 200M parts, serving 30+ countries and regions"}
+      ]
+    },
+    "values": {
+      "title": "Core Values",
+      "items": [
+        {"title": "Quality First", "desc": "Every product undergoes strict inspection — no defect is overlooked"},
+        {"title": "Continuous Innovation", "desc": "Constantly optimizing process technology, driving efficiency through innovation"},
+        {"title": "Customer First", "desc": "Rapid response to customer needs, comprehensive technical support and service"},
+        {"title": "Integrity", "desc": "Build long-term stable partnerships based on trust and honesty"}
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "desc": "Strict implementation of international quality management system standards to ensure stable and reliable product quality"
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "One-stop custom manufacturing services for springs, contacts, and elastic components",
+    "categories": [
+      {
+        "id": "compression",
+        "name": "Compression Springs",
+        "desc": "Using imported spring wire with Taiwanese CNC automatic spring coilers, producing compression springs from 0.1mm to 20mm wire diameter. Features include excellent linearity, long fatigue life, and consistent dimensions. Suitable for automotive suspensions, valves, electronics, and industrial machinery. Supports end grinding, chamfering, and heat setting.",
+        "specs": ["Wire dia: 0.1 - 20 mm", "Outer dia: 1 - 200 mm", "Free length: 2 - 500 mm", "Materials: Carbon steel, Alloy steel, Stainless steel, Copper alloy"],
+        "applications": ["Auto parts", "Electronic devices", "Industrial valves", "Home appliances", "Medical devices"]
+      },
+      {
+        "id": "tension",
+        "name": "Tension Springs",
+        "desc": "Precision tension springs manufactured with automated continuous forming process, ensuring consistent tension across every batch. Supports multiple loop styles (English, German, cross-over, side, inner hook) with custom orientations.",
+        "specs": ["Wire dia: 0.15 - 10 mm", "Max extended length: Custom", "Loop styles: English/German/Side/Inner hook", "Materials: Carbon steel, Stainless steel, Music wire"],
+        "applications": ["Machinery", "Sports equipment", "Furniture hardware", "Power tools"]
+      },
+      {
+        "id": "torsion",
+        "name": "Torsion Springs",
+        "desc": "Precision torsion springs with tight torque tolerance control for precision assembly. Capable of producing double torsion, single torsion, and complex shaped torsion springs.",
+        "specs": ["Wire dia: 0.2 - 12 mm", "Wind direction: Left/Right/Double torsion", "Angle tolerance: ±1° (precision grade)", "Materials: Carbon steel, Stainless steel, Alloy steel"],
+        "applications": ["Door & window hardware", "Switches & electrics", "Clutches", "Valve actuators"]
+      },
+      {
+        "id": "special",
+        "name": "Custom-Shaped Springs",
+        "desc": "Non-standard custom elastic components designed and manufactured based on customer drawings, samples, or functional requirements. FEA-assisted design optimizes stress distribution for reliability under complex conditions.",
+        "specs": ["Custom range: 0.05 - 20mm wire", "Process: Coiling/Stamping/Forming/Heat treat", "Surface: Zinc/Nickel/Plating/Dacromet", "Inspection: 100% dimensional + fatigue test"],
+        "applications": ["Auto safety systems", "Precision instruments", "Aerospace", "Special industrial equipment"]
+      },
+      {
+        "id": "stamping",
+        "name": "Stamping Contacts",
+        "desc": "Precision stamping contacts produced on 25T-200T precision presses with high-speed stamping lines. Includes contact clips, EMI shielding springs, retaining clips, wave springs, and more.",
+        "specs": ["Material thickness: 0.05 - 5 mm", "Stamping precision: ±0.015mm", "Die life: 500K-1M hits", "Materials: Stainless/BeCu/Phosphor bronze/Carbon steel"],
+        "applications": ["Connector terminals", "EMI shielding", "Automotive electronics", "Telecom equipment"]
+      }
+    ],
+    "process": {
+      "title": "Customization Process",
+      "steps": [
+        {"step": "01", "title": "Requirements", "desc": "Understand application, load requirements, space constraints, and performance targets"},
+        {"step": "02", "title": "Design Review", "desc": "Engineering team evaluates feasibility and provides optimization recommendations"},
+        {"step": "03", "title": "Sampling", "desc": "Rapid prototyping, first samples delivered within 3-5 working days"},
+        {"step": "04", "title": "Testing", "desc": "Full dimensional inspection + performance testing, inspection report provided"},
+        {"step": "05", "title": "Mass Production", "desc": "Confirm samples, arrange mass production with in-process quality control"}
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Looking forward to partnering with you — providing quality elastic component solutions",
+    "form": {
+      "title": "Send Inquiry",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "message": "Requirements Description",
+      "submit": "Send Message",
+      "success": "Thank you for your inquiry! We will get back to you shortly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "No.168 Industrial Avenue, Chang'an Town, Dongguan, Guangdong, China",
+      "phone": "+86-769-8888-8888",
+      "email": "info@hengli-spring.com",
+      "whatsapp": "+86-136-8888-8888",
+      "working_hours": "Mon-Fri 8:00-18:00"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "contactInfo": "Contact Us",
+    "copyright": "© 2025 Hengli Precision Spring & Stamping Co., Ltd. All rights reserved"
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "backToHome": "Back to Home"
+  }
+}
