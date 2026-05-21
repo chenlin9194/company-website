@@ -51,9 +51,8 @@ const t = useTranslations(locale);
                 </svg>
               </div>
               <div>
-                <h3 class="font-semibold text-gray-800">{locale === 'zh' ? '电话' : 'Phone'}</h3>
+                <h3 class="font-semibold text-gray-800">{locale === 'zh' ? '电话 / WhatsApp' : 'Phone / WhatsApp'}</h3>
                 <p class="text-gray-500 text-sm mt-1">{t.t('contact.info.phone')}</p>
-                <p class="text-gray-500 text-sm">{t.t('contact.info.whatsapp')}</p>
               </div>
             </div>
           </div>
@@ -68,6 +67,22 @@ const t = useTranslations(locale);
               <div>
                 <h3 class="font-semibold text-gray-800">Email</h3>
                 <p class="text-gray-500 text-sm mt-1">{t.t('contact.info.email')}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-primary-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800">LinkedIn</h3>
+                <a href={t.t('contact.info.linkedinUrl')} target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 text-sm mt-1 block transition-colors underline">
+                  {t.t('contact.info.linkedinText')}
+                </a>
               </div>
             </div>
           </div>
