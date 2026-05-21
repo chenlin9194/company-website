@@ -6,12 +6,18 @@ export interface Props {
   ctaLink: string;
   cta2Text?: string;
   cta2Link?: string;
+  bgImage?: string;
 }
 
-const { title, subtitle, ctaText, ctaLink, cta2Text, cta2Link } = Astro.props;
+const { title, subtitle, ctaText, ctaLink, cta2Text, cta2Link, bgImage } = Astro.props;
 ---
 
 <section class="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white overflow-hidden">
+  {bgImage && (
+    <div class="absolute inset-0">
+      <img src={bgImage} alt="" class="w-full h-full object-cover opacity-20" />
+    </div>
+  )}
   <!-- Background pattern -->
   <div class="absolute inset-0 opacity-10">
     <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>

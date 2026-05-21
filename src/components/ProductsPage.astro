@@ -13,6 +13,12 @@ const categories = t.raw('products.categories') as Array<{
   id: string; name: string; desc: string; specs?: string[]; applications?: string[];
 }>;
 const processSteps = t.raw('products.process.steps') as Array<{ step: string; title: string; desc: string }>;
+const productImages = [
+  '/images/product-springs.jpg',
+  '/images/product-stamping.jpg',
+  '/images/product-mim.jpg',
+  '/images/product-cnc.jpg',
+];
 ---
 
 <Layout locale={locale} title={t.t('products.title')}>
@@ -34,7 +40,7 @@ const processSteps = t.raw('products.process.steps') as Array<{ step: string; ti
             description={cat.desc}
             specs={cat.specs}
             applications={cat.applications}
-            index={i}
+            image={productImages[i]}
           />
         ))}
       </div>
