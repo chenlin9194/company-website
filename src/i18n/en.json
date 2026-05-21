@@ -1,142 +1,133 @@
 {
   "site": {
-    "title": "Hengli Precision Spring & Stamping Manufacturer",
-    "description": "Professional R&D and manufacturing of precision springs, stamping contacts, and custom elastic components",
-    "company": "Hengli Precision Spring & Stamping Co., Ltd."
+    "title": "NingXin Trading",
+    "description": "China Precision Metal Sourcing Partner — MIM, Precision Springs, CNC Machining, Metal Stampings",
+    "company": "Shanghai Ningxin Trading Co., Ltd."
   },
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "products": "Products",
+    "products": "Capabilities",
     "contact": "Contact Us",
     "language": "Language"
   },
   "home": {
     "hero": {
-      "title": "Precision Elastic Components Expert",
-      "subtitle": "20 years dedicated to R&D and manufacturing of precision springs, stamping contacts, and custom-shaped elastic components — delivering high-quality solutions for global clients",
-      "cta": "View Products",
+      "title": "Your China Precision Metal Sourcing Partner",
+      "subtitle": "We don't run a factory — we run a supply chain. Vetted Chinese manufacturers in MIM, precision springs, CNC, and stampings, backed by engineering support and quality control.",
+      "cta": "Our Services",
       "cta2": "About Us"
     },
     "features": {
-      "title": "Why Choose Us",
+      "title": "Why NingXin",
       "items": [
-        {"title": "Precision Manufacturing", "desc": "Japanese & German precision forming equipment, tolerance control to ±0.01mm, meeting the most demanding industrial requirements"},
-        {"title": "Quality Assurance", "desc": "ISO 9001 / IATF 16949 certified, full traceability, 99.8%+ shipment pass rate"},
-        {"title": "Fast Delivery", "desc": "Samples in 3-5 days for standard products, bulk orders in 7-15 days, rush orders supported"},
-        {"title": "Custom Development", "desc": "One-stop service from drawing review to mass production, free engineering evaluation, design optimization assistance"}
+        {"title": "Vetted Supply Chain", "desc": "On-site audits of 100+ factories, 60%淘汰率 — only Top 20% make our list. Covering MIM, springs, CNC, stampings under one roof."},
+        {"title": "Engineering Support", "desc": "DFM review in 3 days, ±3μm tolerance CpK≥1.67, FEA-assisted design optimization. Engineer-to-engineer communication."},
+        {"title": "Quality Control", "desc": "ISO 9001体系 + CMM dimensional reports per batch, REACH/RoHS compliant. Full traceability back to steel mill lot number."},
+        {"title": "End-to-End Delivery", "desc": "Factory audit → samples → production → QC → logistics → customs clearance. Single contact, 30-40 days to European port."}
       ]
     },
     "products": {
-      "title": "Product Lines",
-      "subtitle": "Full-category precision manufacturing capabilities covering springs, contacts, and custom elastic components",
+      "title": "Core Capabilities",
+      "subtitle": "Four precision metal categories, one integrated supply chain — engineered for European OEMs",
       "categories": [
-        {"name": "Compression Springs", "desc": "Wire diameter 0.1-20mm, from micro to large compression springs for automotive, electronics, and machinery"},
-        {"name": "Tension Springs", "desc": "Constant tension and high fatigue life solutions, custom loop configurations available"},
-        {"name": "Torsion Springs", "desc": "Precision torque control for valves, switches, clutches, and various torsion applications"},
-        {"name": "Custom-Shaped Springs", "desc": "Non-standard elastic component customization, developed from customer drawings or samples"},
-        {"name": "Stamping Contacts", "desc": "Precision stamping contacts, contact clips, EMI shielding springs for connectors and electronics"}
+        {"name": "Precision Springs", "desc": "Compression, tension, torsion, custom springs. Wire dia 0.05-20mm for automotive, medical, electronics, industrial."},
+        {"name": "Metal Stampings", "desc": "Contact clips, EMI shields, terminals, precision brackets. Thickness 0.05-5mm, tolerance ±0.015mm."},
+        {"name": "MIM Parts", "desc": "Complex-geometry metal parts from stainless/alloy steel. Density ≥7.5g/cm³, near-net-shape, no secondary machining."},
+        {"name": "CNC Machining", "desc": "Aluminum, stainless, titanium precision parts. Multi-axis turning-milling, full surface treatment capability."},
+        {"name": "Supply Chain Integration", "desc": "Multi-category, single-window sourcing. Reduce supplier management overhead by 30%+."}
       ]
     },
     "about": {
-      "title": "About Us",
-      "desc": "Founded in 2005, our facility covers 8,000㎡ with 120+ precision machines and annual capacity exceeding 200 million parts. Products are exported to 30+ countries and regions, serving Fortune 500 companies as a qualified supplier.",
+      "title": "About NingXin",
+      "desc": "We are not a factory — we are your supply chain desk in China. Vetted manufacturers + engineering review + quality control + logistics. Helping European OEMs access China's precision manufacturing at 20-35% cost advantage.",
       "cta": "Learn More"
     },
     "cta": {
-      "title": "Need Elastic Component Solutions?",
-      "desc": "Get a free engineering evaluation and quotation — our engineers will contact you within 24 hours",
+      "title": "Looking for a China Precision Metal Partner?",
+      "desc": "Get a free supply chain assessment and quotation — our engineers will reply within 24 hours",
       "button": "Inquire Now"
     }
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Focused on precision elastic component manufacturing, trusted by quality",
+    "subtitle": "Your China Precision Metal Sourcing Partner",
     "intro": {
       "title": "Company Profile",
-      "p1": "Hengli Precision Spring & Stamping Co., Ltd. was founded in 2005, headquartered in Dongguan City, Guangdong Province. We are a professional precision elastic component manufacturer integrating R&D, production, and sales. Our facility covers 8,000 square meters with over 200 employees, including 30+ engineering technicians.",
-      "p2": "Since our establishment, we have adhered to the philosophy of 'innovation as life, quality as survival', continuously introducing advanced production equipment and inspection instruments from domestic and international sources to enhance our manufacturing capability and quality standards.",
-      "p3": "With an annual capacity exceeding 200 million parts, our products are widely used in automotive manufacturing, 3C electronics, home appliances, medical devices, and new energy sectors, exported to 30+ countries and regions worldwide."
+      "p1": "Shanghai Ningxin Trading Co., Ltd. is a precision metal supply chain management company. We are not a factory — we are your Managed Sourcing Partner in China, helping European OEMs and EMS providers find, evaluate, and manage quality precision manufacturing suppliers.",
+      "p2": "Our core categories span MIM (metal injection molding), precision springs, CNC machining, and metal stampings. Through rigorous supplier screening — on-site audits, technical evaluation, quality system review — we select only the Top 20% from 100+ candidate factories.",
+      "p3": "Our team brings 15+ years of precision manufacturing and engineering experience, delivering DFM reviews, tolerance analysis, FEA simulation, and full quality control. We serve clients across medical devices, industrial automation, and 3C electronics in Europe."
     },
     "milestones": {
       "title": "Milestones",
       "items": [
-        {"year": "2005", "event": "Company founded, leasing 1,200㎡ facility, starting spring processing business"},
-        {"year": "2010", "event": "Purchased 3,000㎡ factory, introduced automatic spring coiler production lines"},
-        {"year": "2015", "event": "ISO 9001 certified, expanded into overseas markets"},
-        {"year": "2018", "event": "Facility expanded to 8,000㎡, obtained IATF 16949 automotive certification"},
-        {"year": "2021", "event": "Introduced MIM metal injection molding technology, expanded precision parts business"},
-        {"year": "2025", "event": "Annual capacity exceeded 200M parts, serving 30+ countries and regions"}
+        {"year": "2023", "event": "Shanghai Ningxin Trading founded, focused on precision metal supply chain management"},
+        {"year": "2024", "event": "Completed on-site audits of 15+ factories in Yangtze River Delta, built vetted supplier database"},
+        {"year": "2025", "event": "European market launch — first samples delivered to Dutch and German clients"},
+        {"year": "2026", "event": "ISO 9001 certified, ISO 13485 in process, serving semiconductor/medical/automotive sectors"}
       ]
     },
     "values": {
       "title": "Core Values",
       "items": [
-        {"title": "Quality First", "desc": "Every product undergoes strict inspection — no defect is overlooked"},
-        {"title": "Continuous Innovation", "desc": "Constantly optimizing process technology, driving efficiency through innovation"},
-        {"title": "Customer First", "desc": "Rapid response to customer needs, comprehensive technical support and service"},
-        {"title": "Integrity", "desc": "Build long-term stable partnerships based on trust and honesty"}
+        {"title": "Quality First", "desc": "Not every factory makes our list — 60%+ rejection rate in supplier selection"},
+        {"title": "Engineering-Driven", "desc": "Engineers select factories, review drawings, control quality. Not a middleman — a technical partner."},
+        {"title": "Transparent", "desc": "CMM reports + material certificates with every batch. Traceability to steel mill heat number."},
+        {"title": "Continuous Improvement", "desc": "Regular supplier performance reviews driving ongoing quality, delivery, and cost improvements"}
       ]
     },
     "certifications": {
-      "title": "Certifications",
-      "desc": "Strict implementation of international quality management system standards to ensure stable and reliable product quality"
+      "title": "Quality Systems",
+      "desc": "Partner factories are ISO 9001:2015 / IATF 16949 certified. Products comply with EU REACH/RoHS. ISO 13485 in progress."
     }
   },
   "products": {
-    "title": "Products",
-    "subtitle": "One-stop custom manufacturing services for springs, contacts, and elastic components",
+    "title": "Capabilities",
+    "subtitle": "Integrated supply chain services across four core precision metal categories",
     "categories": [
       {
-        "id": "compression",
-        "name": "Compression Springs",
-        "desc": "Using imported spring wire with Taiwanese CNC automatic spring coilers, producing compression springs from 0.1mm to 20mm wire diameter. Features include excellent linearity, long fatigue life, and consistent dimensions. Suitable for automotive suspensions, valves, electronics, and industrial machinery. Supports end grinding, chamfering, and heat setting.",
-        "specs": ["Wire dia: 0.1 - 20 mm", "Outer dia: 1 - 200 mm", "Free length: 2 - 500 mm", "Materials: Carbon steel, Alloy steel, Stainless steel, Copper alloy"],
-        "applications": ["Auto parts", "Electronic devices", "Industrial valves", "Home appliances", "Medical devices"]
-      },
-      {
-        "id": "tension",
-        "name": "Tension Springs",
-        "desc": "Precision tension springs manufactured with automated continuous forming process, ensuring consistent tension across every batch. Supports multiple loop styles (English, German, cross-over, side, inner hook) with custom orientations.",
-        "specs": ["Wire dia: 0.15 - 10 mm", "Max extended length: Custom", "Loop styles: English/German/Side/Inner hook", "Materials: Carbon steel, Stainless steel, Music wire"],
-        "applications": ["Machinery", "Sports equipment", "Furniture hardware", "Power tools"]
-      },
-      {
-        "id": "torsion",
-        "name": "Torsion Springs",
-        "desc": "Precision torsion springs with tight torque tolerance control for precision assembly. Capable of producing double torsion, single torsion, and complex shaped torsion springs.",
-        "specs": ["Wire dia: 0.2 - 12 mm", "Wind direction: Left/Right/Double torsion", "Angle tolerance: ±1° (precision grade)", "Materials: Carbon steel, Stainless steel, Alloy steel"],
-        "applications": ["Door & window hardware", "Switches & electrics", "Clutches", "Valve actuators"]
-      },
-      {
-        "id": "special",
-        "name": "Custom-Shaped Springs",
-        "desc": "Non-standard custom elastic components designed and manufactured based on customer drawings, samples, or functional requirements. FEA-assisted design optimizes stress distribution for reliability under complex conditions.",
-        "specs": ["Custom range: 0.05 - 20mm wire", "Process: Coiling/Stamping/Forming/Heat treat", "Surface: Zinc/Nickel/Plating/Dacromet", "Inspection: 100% dimensional + fatigue test"],
-        "applications": ["Auto safety systems", "Precision instruments", "Aerospace", "Special industrial equipment"]
+        "id": "springs",
+        "name": "Precision Springs",
+        "desc": "Through our vetted partner factories, we supply all types of precision springs. Partner facilities feature Taiwanese CNC coilers, CNC heat treatment furnaces, and automatic fatigue testers — covering micro springs to heavy industrial springs.",
+        "specs": ["Wire dia: 0.05 - 20 mm", "Tolerance grade: ±0.01mm (precision)", "Materials: Carbon/Alloy/Stainless steel, Music wire, Copper alloy", "Finishing: Grinding/Chamfering/Heat setting/Shot peening/Dacromet/EDP"],
+        "applications": ["Automotive parts", "Medical devices", "Electronics", "Industrial valves", "New energy"]
       },
       {
         "id": "stamping",
-        "name": "Stamping Contacts",
-        "desc": "Precision stamping contacts produced on 25T-200T precision presses with high-speed stamping lines. Includes contact clips, EMI shielding springs, retaining clips, wave springs, and more.",
-        "specs": ["Material thickness: 0.05 - 5 mm", "Stamping precision: ±0.015mm", "Die life: 500K-1M hits", "Materials: Stainless/BeCu/Phosphor bronze/Carbon steel"],
-        "applications": ["Connector terminals", "EMI shielding", "Automotive electronics", "Telecom equipment"]
+        "name": "Metal Stampings & Contacts",
+        "desc": "Partner factories equipped with 25T-200T precision presses and high-speed stamping lines. Products include contact clips, EMI shielding cans, precision terminals, retaining clips, and wave springs. In-house die development supports complex multi-station progressive tooling.",
+        "specs": ["Material thickness: 0.05 - 5 mm", "Stamping precision: ±0.015mm", "Die types: Single station/Progressive/Compound", "Materials: Stainless/BeCu/Phosphor bronze/Carbon steel/Nickel alloy"],
+        "applications": ["Connector terminals", "EMI shielding", "Automotive electronics", "Telecom", "Consumer electronics"]
+      },
+      {
+        "id": "mim",
+        "name": "MIM (Metal Injection Molding)",
+        "desc": "Full-process MIM production capability (feedstock → injection → debinding → sintering → post-processing) for complex precision parts in stainless and alloy steels. Complex geometries net-shaped in one forming process, eliminating secondary machining.",
+        "specs": ["Density: ≥7.5 g/cm³", "Tolerance: ±0.3% (as-sintered)", "Materials: 316L/17-4PH/304L/Fe-2Ni", "Post-processing: Polishing/Heat treatment/Plating"],
+        "applications": ["Medical instruments", "Automotive parts", "Power tools", "Consumer electronics", "Defense"]
+      },
+      {
+        "id": "cnc",
+        "name": "CNC Precision Machining",
+        "desc": "Partner shops equipped with imported CNC turn-mill centers and 5-axis machines. Specializing in aluminum, stainless steel, titanium, and engineering plastic parts. Full lifecycle service from prototype to mass production.",
+        "specs": ["Machining precision: ±0.005mm", "Equipment: Turn-mill/5-axis/Swiss-type", "Materials: Aluminum/Stainless steel/Titanium/PEEK", "Surface treatment: Anodizing/Plating/Passivation/Coating"],
+        "applications": ["Precision instruments", "Automation equipment", "Aerospace", "Semiconductor equipment"]
       }
     ],
     "process": {
-      "title": "Customization Process",
+      "title": "How We Work",
       "steps": [
-        {"step": "01", "title": "Requirements", "desc": "Understand application, load requirements, space constraints, and performance targets"},
-        {"step": "02", "title": "Design Review", "desc": "Engineering team evaluates feasibility and provides optimization recommendations"},
-        {"step": "03", "title": "Sampling", "desc": "Rapid prototyping, first samples delivered within 3-5 working days"},
-        {"step": "04", "title": "Testing", "desc": "Full dimensional inspection + performance testing, inspection report provided"},
-        {"step": "05", "title": "Mass Production", "desc": "Confirm samples, arrange mass production with in-process quality control"}
+        {"step": "01", "title": "Requirements", "desc": "Understand application, technical specs, target cost and delivery timeline"},
+        {"step": "02", "title": "Supplier Matching", "desc": "Match to the best-fit factory from our vetted database by category and precision level"},
+        {"step": "03", "title": "DFM Review", "desc": "Engineering team reviews manufacturability, provides cost-optimization recommendations"},
+        {"step": "04", "title": "Sampling", "desc": "Coordinate rapid sampling, follow full dimensional inspection and performance testing"},
+        {"step": "05", "title": "Mass Production", "desc": "In-process QC + outgoing inspection + logistics — single-window management"}
       ]
     }
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Looking forward to partnering with you — providing quality elastic component solutions",
+    "subtitle": "Get a free supply chain assessment and quotation",
     "form": {
       "title": "Send Inquiry",
       "name": "Your Name",
@@ -144,26 +135,26 @@
       "phone": "Phone Number",
       "company": "Company Name",
       "message": "Requirements Description",
-      "submit": "Send Message",
-      "success": "Thank you for your inquiry! We will get back to you shortly."
+      "submit": "Send Inquiry",
+      "success": "Thank you for your inquiry! We will contact you within 24 hours."
     },
     "info": {
       "title": "Contact Information",
-      "address": "No.168 Industrial Avenue, Chang'an Town, Dongguan, Guangdong, China",
-      "phone": "+86-769-8888-8888",
-      "email": "info@hengli-spring.com",
-      "whatsapp": "+86-136-8888-8888",
-      "working_hours": "Mon-Fri 8:00-18:00"
+      "address": "Pudong New Area, Shanghai, China",
+      "phone": "+86 18512179408",
+      "email": "chen.lin9194@gmail.com",
+      "whatsapp": "+86 18512179408",
+      "working_hours": "Mon-Fri 9:00-18:00 (GMT+8)"
     }
   },
   "footer": {
     "quickLinks": "Quick Links",
-    "products": "Products",
+    "products": "Capabilities",
     "contactInfo": "Contact Us",
-    "copyright": "© 2025 Hengli Precision Spring & Stamping Co., Ltd. All rights reserved"
+    "copyright": "© 2026 Shanghai Ningxin Trading Co., Ltd. All rights reserved"
   },
   "common": {
-    "readMore": "Read More",
+    "readMore": "Learn More",
     "viewAll": "View All",
     "backToHome": "Back to Home"
   }
