@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "NingXin Trading",
-    "description": "China Precision Metal Sourcing Partner — MIM, Precision Springs, CNC Machining, Metal Stampings",
+    "description": "China Precision Manufacturing Sourcing Agent — Precision Metal Parts, Fiber Optics, Power Cables — Integrated Supply Chain Management",
     "company": "Shanghai Ningxin Trading Co., Ltd."
   },
   "nav": {
@@ -13,58 +13,60 @@
   },
   "home": {
     "hero": {
-      "title": "Your China Precision Metal Sourcing Partner",
-      "subtitle": "We don't run a factory — we run a supply chain. Vetted Chinese manufacturers in MIM, precision springs, CNC, and stampings, backed by engineering support and quality control.",
+      "title": "Your China Precision Manufacturing Sourcing Agent",
+      "subtitle": "We don't run a factory — we run a supply chain. Vetted Chinese manufacturers in precision metal parts, fiber optics, and power cables, backed by engineering support and quality control. Helping global buyers access China's manufacturing at 20-35% cost advantage.",
       "cta": "Our Services",
       "cta2": "About Us"
     },
     "features": {
       "title": "Why NingXin",
       "items": [
-        {"title": "Vetted Supply Chain", "desc": "On-site audits of 100+ factories, 60%淘汰率 — only Top 20% make our list. Covering MIM, springs, CNC, stampings under one roof."},
+        {"title": "Vetted Supply Chain", "desc": "On-site audits of 100+ factories across precision metal, fiber optics, and cable — 60%淘汰率, only Top 20% make our list."},
         {"title": "Engineering Support", "desc": "DFM review in 3 days, ±3μm tolerance CpK≥1.67, FEA-assisted design optimization. Engineer-to-engineer communication."},
-        {"title": "Quality Control", "desc": "ISO 9001体系 + CMM dimensional reports per batch, REACH/RoHS compliant. Full traceability back to steel mill lot number."},
-        {"title": "End-to-End Delivery", "desc": "Factory audit → samples → production → QC → logistics → customs clearance. Single contact, 30-40 days to European port."}
+        {"title": "Quality Control", "desc": "ISO 9001体系 + CMM dimensional reports per batch, REACH/RoHS compliant. Full traceability back to material lot numbers."},
+        {"title": "End-to-End Delivery", "desc": "Factory audit → samples → production → QC → logistics → customs clearance. Single contact management for every shipment."}
       ]
     },
     "products": {
       "title": "Core Capabilities",
-      "subtitle": "Four precision metal categories, one integrated supply chain — engineered for European OEMs",
+      "subtitle": "Precision metal parts, fiber optics, and power cables — one integrated supply chain for global OEMs",
       "categories": [
         {"name": "Precision Springs", "desc": "Compression, tension, torsion, custom springs. Wire dia 0.05-20mm for automotive, medical, electronics, industrial."},
         {"name": "Metal Stampings", "desc": "Contact clips, EMI shields, terminals, precision brackets. Thickness 0.05-5mm, tolerance ±0.015mm."},
         {"name": "MIM Parts", "desc": "Complex-geometry metal parts from stainless/alloy steel. Density ≥7.5g/cm³, near-net-shape, no secondary machining."},
         {"name": "CNC Machining", "desc": "Aluminum, stainless, titanium precision parts. Multi-axis turning-milling, full surface treatment capability."},
-        {"name": "Supply Chain Integration", "desc": "Multi-category, single-window sourcing. Reduce supplier management overhead by 30%+."}
+        {"name": "Single-Mode Fiber", "desc": "Full-range G.652/654/655 single-mode fiber, low water peak/bend-insensitive/ultra-low-loss, for 5G/backbone/data center."},
+        {"name": "Multi-Mode Fiber", "desc": "OM1-OM5 multi-mode fiber, PCVD process, supporting 1G-400G Ethernet. First choice for data centers."},
+        {"name": "Power Cables", "desc": "Power cables/conductors/control cables, 500kV EHV to LV full range. Qualified supplier to State Grid & China Southern Power Grid."}
       ]
     },
     "about": {
       "title": "About NingXin",
-      "desc": "We are not a factory — we are your supply chain desk in China. Vetted manufacturers + engineering review + quality control + logistics. Helping European OEMs access China's precision manufacturing at 20-35% cost advantage.",
+      "desc": "We are not a factory — we are your sourcing desk in China. Vetted manufacturers + engineering review + quality control + logistics, covering precision metal, fiber optics, and power cables. Helping global clients access China's manufacturing at 20-35% cost advantage.",
       "cta": "Learn More"
     },
     "cta": {
-      "title": "Looking for a China Precision Metal Partner?",
-      "desc": "Get a free supply chain assessment and quotation — our engineers will reply within 24 hours",
+      "title": "Looking for a China Manufacturing Partner?",
+      "desc": "Get a free supply chain assessment and quotation — our team will reply within 24 hours",
       "button": "Inquire Now"
     }
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Your China Precision Metal Sourcing Partner",
+    "subtitle": "Your China Precision Manufacturing Sourcing Partner",
     "intro": {
       "title": "Company Profile",
-      "p1": "Shanghai Ningxin Trading Co., Ltd. is a precision metal supply chain management company. We are not a factory — we are your Managed Sourcing Partner in China, helping European OEMs and EMS providers find, evaluate, and manage quality precision manufacturing suppliers.",
-      "p2": "Our core categories span MIM (metal injection molding), precision springs, CNC machining, and metal stampings. Through rigorous supplier screening — on-site audits, technical evaluation, quality system review — we select only the Top 20% from 100+ candidate factories.",
-      "p3": "Our team brings 15+ years of precision manufacturing and engineering experience, delivering DFM reviews, tolerance analysis, FEA simulation, and full quality control. We serve clients across medical devices, industrial automation, and 3C electronics in Europe."
+      "p1": "Shanghai Ningxin Trading Co., Ltd. is a China-focused precision manufacturing supply chain management company. We are not a factory — we are your Managed Sourcing Partner in China, helping global clients find, evaluate, and manage quality manufacturing suppliers.",
+      "p2": "Our core categories span precision metal parts (springs, stampings, MIM, CNC machining) and fiber & cable (single-mode/multi-mode fiber, power cables, conductors, control cables). Through rigorous supplier screening — on-site audits, technical evaluation, quality system review — we select only the Top 20% from 100+ candidate factories.",
+      "p3": "Our team brings 15+ years of precision manufacturing and engineering experience, delivering DFM reviews, tolerance analysis, FEA simulation, and full quality control. We serve clients across medical devices, industrial automation, 3C electronics, and telecommunications infrastructure."
     },
     "milestones": {
       "title": "Milestones",
       "items": [
-        {"year": "2023", "event": "Shanghai Ningxin Trading founded, focused on precision metal supply chain management"},
+        {"year": "2023", "event": "Shanghai Ningxin Trading founded, focused on precision manufacturing supply chain management"},
         {"year": "2024", "event": "Completed on-site audits of 15+ factories in Yangtze River Delta, built vetted supplier database"},
         {"year": "2025", "event": "European market launch — first samples delivered to Dutch and German clients"},
-        {"year": "2026", "event": "ISO 9001 certified, ISO 13485 in process, serving semiconductor/medical/automotive sectors"}
+        {"year": "2026", "event": "Expanded into fiber & cable categories, partnered with multiple leading suppliers"}
       ]
     },
     "values": {
@@ -72,21 +74,22 @@
       "items": [
         {"title": "Quality First", "desc": "Not every factory makes our list — 60%+ rejection rate in supplier selection"},
         {"title": "Engineering-Driven", "desc": "Engineers select factories, review drawings, control quality. Not a middleman — a technical partner."},
-        {"title": "Transparent", "desc": "CMM reports + material certificates with every batch. Traceability to steel mill heat number."},
+        {"title": "Transparent", "desc": "CMM reports + material certificates with every batch. Traceability back to supplier material lot numbers."},
         {"title": "Continuous Improvement", "desc": "Regular supplier performance reviews driving ongoing quality, delivery, and cost improvements"}
       ]
     },
     "certifications": {
       "title": "Quality Systems",
-      "desc": "Partner factories are ISO 9001:2015 / IATF 16949 certified. Products comply with EU REACH/RoHS. ISO 13485 in progress."
+      "desc": "Partner factories are ISO 9001:2015 / IATF 16949 certified. Products comply with EU REACH/RoHS. Fiber optic products meet Telcordia/YD/T industry standards."
     }
   },
   "products": {
     "title": "Capabilities",
-    "subtitle": "Integrated supply chain services across four core precision metal categories",
+    "subtitle": "Integrated supply chain services across precision metal parts, fiber optics, and power cables",
     "categories": [
       {
         "id": "springs",
+        "group": "metal",
         "name": "Precision Springs",
         "desc": "Through our vetted partner factories, we supply all types of precision springs. Partner facilities feature Taiwanese CNC coilers, CNC heat treatment furnaces, and automatic fatigue testers — covering micro springs to heavy industrial springs.",
         "specs": ["Wire dia: 0.05 - 20 mm", "Tolerance grade: ±0.01mm (precision)", "Materials: Carbon/Alloy/Stainless steel, Music wire, Copper alloy", "Finishing: Grinding/Chamfering/Heat setting/Shot peening/Dacromet/EDP"],
@@ -94,6 +97,7 @@
       },
       {
         "id": "stamping",
+        "group": "metal",
         "name": "Metal Stampings & Contacts",
         "desc": "Partner factories equipped with 25T-200T precision presses and high-speed stamping lines. Products include contact clips, EMI shielding cans, precision terminals, retaining clips, and wave springs. In-house die development supports complex multi-station progressive tooling.",
         "specs": ["Material thickness: 0.05 - 5 mm", "Stamping precision: ±0.015mm", "Die types: Single station/Progressive/Compound", "Materials: Stainless/BeCu/Phosphor bronze/Carbon steel/Nickel alloy"],
@@ -101,6 +105,7 @@
       },
       {
         "id": "mim",
+        "group": "metal",
         "name": "MIM (Metal Injection Molding)",
         "desc": "Full-process MIM production capability (feedstock → injection → debinding → sintering → post-processing) for complex precision parts in stainless and alloy steels. Complex geometries net-shaped in one forming process, eliminating secondary machining.",
         "specs": ["Density: ≥7.5 g/cm³", "Tolerance: ±0.3% (as-sintered)", "Materials: 316L/17-4PH/304L/Fe-2Ni", "Post-processing: Polishing/Heat treatment/Plating"],
@@ -108,12 +113,41 @@
       },
       {
         "id": "cnc",
+        "group": "metal",
         "name": "CNC Precision Machining",
         "desc": "Partner shops equipped with imported CNC turn-mill centers and 5-axis machines. Specializing in aluminum, stainless steel, titanium, and engineering plastic parts. Full lifecycle service from prototype to mass production.",
         "specs": ["Machining precision: ±0.005mm", "Equipment: Turn-mill/5-axis/Swiss-type", "Materials: Aluminum/Stainless steel/Titanium/PEEK", "Surface treatment: Anodizing/Plating/Passivation/Coating"],
         "applications": ["Precision instruments", "Automation equipment", "Aerospace", "Semiconductor equipment"]
+      },
+      {
+        "id": "fiber-singlemode",
+        "group": "fiber-cable",
+        "name": "Single-Mode Fiber",
+        "desc": "In partnership with a global leading fiber manufacturer, we supply the full range of single-mode fiber products. Performance meets or exceeds all international standards for high-speed, long-distance communications.",
+        "specs": ["Series: Low water peak/Bend-insensitive/Ultra-low loss/Large effective area/NZ-DSF", "Standards: G.652 / G.654 / G.655 / G.657", "Data rate: 10G-400G+"],
+        "applications": ["5G backbone", "Data center interconnect", "Long-haul networks", "Metro networks", "FTTx"]
+      },
+      {
+        "id": "fiber-multimode",
+        "group": "fiber-cable",
+        "name": "Multi-Mode Fiber",
+        "desc": "Full-range multi-mode fiber products, manufactured using advanced PCVD process for excellent DMD and bandwidth performance. From OM1 to the latest OM5 wideband fiber, supporting data center speed upgrades.",
+        "specs": ["Series: OM1 / OM2 / OM3 / OM4 / OM5", "Core size: 50/125μm & 62.5/125μm", "Process: PCVD (Plasma Chemical Vapor Deposition)"],
+        "applications": ["Data centers", "Storage networks", "LAN", "1G-400G Ethernet"]
+      },
+      {
+        "id": "cable",
+        "group": "fiber-cable",
+        "name": "Power Cables & Conductors",
+        "desc": "In partnership with a leading listed Chinese cable manufacturer, established in 1958, a comprehensive cable supplier and core supplier to State Grid and China Southern Power Grid for HV and EHV cables.",
+        "specs": ["Voltage: 500kV EHV to 0.6/1kV LV full range", "Products: Power cables/Control cables/ACSR/AAAC/Building wire", "Specialty: Rail transit/Wind/Solar/Mining/Fire-resistant/Nuclear cables"],
+        "applications": ["Power transmission & distribution", "Renewable energy", "Rail transit", "Building wiring", "Industrial distribution"]
       }
     ],
+    "groupLabels": {
+      "metal": "Precision Metal Parts",
+      "fiber-cable": "Fiber & Cable"
+    },
     "process": {
       "title": "How We Work",
       "steps": [
@@ -134,7 +168,7 @@
       "email": "Email Address",
       "phone": "Phone Number",
       "company": "Company Name",
-      "message": "Requirements Description",
+      "message": "Requirements Description (product type, specifications, quantity, etc.)",
       "submit": "Send Inquiry",
       "success": "Thank you for your inquiry! We will contact you within 24 hours."
     },

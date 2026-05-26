@@ -9,16 +9,35 @@ export interface Props {
 
 const { locale } = Astro.props;
 const t = useTranslations(locale);
-const categories = t.raw('products.categories') as Array<{
-  id: string; name: string; desc: string; specs?: string[]; applications?: string[];
+
+const allCategories = t.raw('products.categories') as Array<{
+  id: string; group: string; name: string; desc: string; specs?: string[]; applications?: string[];
 }>;
+
+const groupLabels = t.raw('products.groupLabels') as Record<string, string>;
+
+// Group categories by their group field
+const groupMap = new Map<string, typeof allCategories>();
+let groupOrder: string[] = [];
+allCategories.forEach(cat => {
+  if (!groupMap.has(cat.group)) {
+    groupMap.set(cat.group, []);
+    groupOrder.push(cat.group);
+  }
+  groupMap.get(cat.group)!.push(cat);
+});
+
 const processSteps = t.raw('products.process.steps') as Array<{ step: string; title: string; desc: string }>;
-const productImages = [
-  '/images/product-springs.jpg',
-  '/images/product-stamping.jpg',
-  '/images/product-mim.jpg',
-  '/images/product-cnc.jpg',
-];
+
+const productImages: Record<string, string> = {
+  springs: '/images/product-springs.jpg',
+  stamping: '/images/product-stamping.jpg',
+  mim: '/images/product-mim.jpg',
+  cnc: '/images/product-cnc.jpg',
+  'fiber-singlemode': '/images/product-fiber.svg',
+  'fiber-multimode': '/images/product-fiber.svg',
+  cable: '/images/product-cable.svg',
+};
 ---
 
 <Layout locale={locale} title={t.t('products.title')}>
@@ -30,22 +49,30 @@ const productImages = [
     </div>
   </section>
 
-  <!-- Product Categories -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categories.map((cat, i) => (
-          <ProductCard
-            name={cat.name}
-            description={cat.desc}
-            specs={cat.specs}
-            applications={cat.applications}
-            image={productImages[i]}
-          />
-        ))}
+  <!-- Product Categories by Group -->
+  {groupOrder.map((groupKey) => (
+    <section class={groupKey === groupOrder[0] ? 'bg-gray-50' : 'bg-white'}>
+      <div class="container-section">
+        {groupLabels[groupKey] && (
+          <div class="mb-8">
+            <h2 class="section-title">{groupLabels[groupKey]}</h2>
+            <div class="w-16 h-1 bg-accent-500 mx-auto mt-2"></div>
+          </div>
+        )}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {groupMap.get(groupKey)!.map((cat) => (
+            <ProductCard
+              name={cat.name}
+              description={cat.desc}
+              specs={cat.specs}
+              applications={cat.applications}
+              image={productImages[cat.id]}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 
   <!-- Process Flow -->
   <section class="bg-white">
