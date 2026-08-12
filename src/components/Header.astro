@@ -18,7 +18,7 @@ if (currentPath.startsWith('/en')) {
   pathSuffix = '/';
 }
 const langSwitchPath = locale === 'zh' ? `/en${pathSuffix}` : pathSuffix;
-const isHome = currentPath === '/' || currentPath === '/en/';
+const isHome = currentPath === '/' || currentPath === '/en' || currentPath === '/en/';
 const isAbout = currentPath.startsWith('/about') || currentPath.startsWith('/en/about');
 const isProducts = currentPath.startsWith('/products') || currentPath.startsWith('/en/products');
 const isContact = currentPath.startsWith('/contact') || currentPath.startsWith('/en/contact');

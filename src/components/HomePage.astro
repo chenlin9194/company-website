@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from './Hero.astro';
-import ProductCard from './ProductCard.astro';
 import { useTranslations, type Locale } from '../i18n';
 
 export interface Props {
@@ -12,17 +11,7 @@ const { locale } = Astro.props;
 const t = useTranslations(locale);
 const prefix = locale === 'zh' ? '' : '/en';
 
-const products = t.raw('home.products.categories') as Array<{ name: string; desc: string }>;
 const features = t.raw('home.features.items') as Array<{ title: string; desc: string }>;
-const productImages = [
-  '/images/product-springs.jpg',
-  '/images/product-stamping.jpg',
-  '/images/product-mim.jpg',
-  '/images/product-cnc.jpg',
-  '/images/product-fiber-sm.jpg',
-  '/images/product-fiber-mm.jpg',
-  '/images/product-cable.jpg',
-];
 ---
 
 <Layout locale={locale}>
@@ -30,10 +19,9 @@ const productImages = [
     title={t.t('home.hero.title')}
     subtitle={t.t('home.hero.subtitle')}
     ctaText={t.t('home.hero.cta')}
-    ctaLink={`${prefix}/products`}
+    ctaLink={`${prefix}/contact`}
     cta2Text={t.t('home.hero.cta2')}
     cta2Link={`${prefix}/about`}
-    bgImage="/images/hero-bg.jpg"
   />
 
   <!-- Features -->
@@ -56,36 +44,13 @@ const productImages = [
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- About -->
   <section class="bg-white">
     <div class="container-section">
-      <h2 class="section-title">{t.t('home.products.title')}</h2>
-      <p class="section-subtitle">{t.t('home.products.subtitle')}</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map((product, i) => (
-          <ProductCard name={product.name} description={product.desc} image={productImages[i]} />
-        ))}
-      </div>
-      <div class="text-center mt-10">
-        <a href={`${prefix}/products`} class="btn-outline">{t.t('common.viewAll')}</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="rounded-xl overflow-hidden aspect-[4/3]">
-            <img src="/images/company.jpg" alt={t.t('site.company')} class="w-full h-full object-cover" />
-          </div>
-        </div>
-        <div>
+      <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-6">{t.t('home.about.title')}</h2>
           <p class="text-gray-600 leading-relaxed mb-6">{t.t('home.about.desc')}</p>
           <a href={`${prefix}/about`} class="btn-primary">{t.t('home.about.cta')}</a>
-        </div>
       </div>
     </div>
   </section>

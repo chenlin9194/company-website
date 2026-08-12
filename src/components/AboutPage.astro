@@ -8,7 +8,6 @@ export interface Props {
 
 const { locale } = Astro.props;
 const t = useTranslations(locale);
-const milestones = t.raw('about.milestones.items') as Array<{ year: string; event: string }>;
 const values = t.raw('about.values.items') as Array<{ title: string; desc: string }>;
 ---
 
@@ -35,38 +34,13 @@ const values = t.raw('about.values.items') as Array<{ title: string; desc: strin
     </div>
   </section>
 
-  <!-- Milestones -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <h2 class="section-title">{t.t('about.milestones.title')}</h2>
-      <div class="max-w-3xl mx-auto">
-        <div class="relative">
-          <!-- Timeline line -->
-          <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-200"></div>
-          <div class="space-y-8">
-            {milestones.map((m) => (
-              <div class="relative flex items-start gap-6">
-                <div class="flex-shrink-0 w-16 h-16 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold text-sm z-10 shadow-md">
-                  {m.year}
-                </div>
-                <div class="bg-white rounded-lg p-5 shadow-sm flex-1 mt-2">
-                  <p class="text-gray-700">{m.event}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Values -->
-  <section class="bg-white">
+  <section class="bg-gray-50">
     <div class="container-section">
       <h2 class="section-title">{t.t('about.values.title')}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
         {values.map((v) => (
-          <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="text-center p-6 bg-white rounded-xl">
             <h3 class="text-xl font-bold text-primary-500 mb-3">{v.title}</h3>
             <p class="text-gray-500 text-sm">{v.desc}</p>
           </div>
@@ -75,31 +49,4 @@ const values = t.raw('about.values.items') as Array<{ title: string; desc: strin
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <h2 class="section-title">{t.t('about.certifications.title')}</h2>
-      <p class="section-subtitle">{t.t('about.certifications.desc')}</p>
-      <div class="flex flex-wrap justify-center gap-8">
-        <div class="bg-white rounded-xl p-8 shadow-sm text-center w-48">
-          <div class="w-20 h-20 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-2xl font-bold text-primary-500">ISO</span>
-          </div>
-          <p class="text-sm text-gray-600 font-medium">ISO 9001:2015</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm text-center w-48">
-          <div class="w-20 h-20 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-2xl font-bold text-primary-500">IATF</span>
-          </div>
-          <p class="text-sm text-gray-600 font-medium">IATF 16949:2016</p>
-        </div>
-        <div class="bg-white rounded-xl p-8 shadow-sm text-center w-48">
-          <div class="w-20 h-20 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span class="text-2xl font-bold text-primary-500">RoHS</span>
-          </div>
-          <p class="text-sm text-gray-600 font-medium">RoHS Compliant</p>
-        </div>
-      </div>
-    </div>
-  </section>
 </Layout>
