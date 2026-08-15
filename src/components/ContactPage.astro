@@ -12,20 +12,6 @@ const t = useTranslations(locale);
 ---
 
 <Layout locale={locale} title={t.t('contact.title')}>
-  <!-- Page Header -->
-  <section class="bg-gradient-to-br from-primary-500 to-primary-700 text-white py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t.t('contact.title')}</h1>
-      <p class="text-gray-200 text-lg">{t.t('contact.subtitle')}</p>
-    </div>
-  </section>
-
-  <!-- Contact Content -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <div class="max-w-3xl mx-auto">
-          <ContactForm locale={locale} />
-      </div>
-    </div>
-  </section>
+  <section class="page-hero page-hero-contact"><div class="page-shell page-hero-grid"><div><p class="eyebrow eyebrow-light">{t.t('contact.eyebrow')}</p><h1>{t.t('contact.title')}</h1><p>{t.t('contact.subtitle')}</p></div><div class="page-hero-mark" aria-hidden="true">RFQ<span>01 / START HERE</span></div></div></section>
+  <section class="section section-paper"><div class="page-shell contact-layout"><div class="contact-intro"><p class="eyebrow">{t.t('contact.intro.eyebrow')}</p><h2>{t.t('contact.intro.title')}</h2><p>{t.t('contact.intro.desc')}</p><div class="contact-checklist">{(t.raw('contact.intro.items') as string[]).map((item, index) => <div><span>0{index + 1}</span><p>{item}</p></div>)}</div></div><ContactForm locale={locale} /></div></section>
 </Layout>

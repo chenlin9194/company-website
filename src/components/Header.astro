@@ -7,84 +7,59 @@ export interface Props {
 
 const { locale } = Astro.props;
 const t = useTranslations(locale);
-const otherLocale = locale === 'zh' ? 'en' : 'zh';
-const otherPath = locale === 'zh' ? '/en' : '/';
 const currentPath = Astro.url.pathname;
-// Map current path to the other language
-let pathSuffix = currentPath;
-if (currentPath.startsWith('/en')) {
-  pathSuffix = currentPath.replace('/en', '') || '/';
-} else if (currentPath === '/') {
-  pathSuffix = '/';
-}
+const prefix = locale === 'zh' ? '' : '/en';
+let pathSuffix = currentPath.startsWith('/en') ? currentPath.replace('/en', '') || '/' : currentPath;
+if (pathSuffix === '') pathSuffix = '/';
 const langSwitchPath = locale === 'zh' ? `/en${pathSuffix}` : pathSuffix;
 const isHome = currentPath === '/' || currentPath === '/en' || currentPath === '/en/';
 const isAbout = currentPath.startsWith('/about') || currentPath.startsWith('/en/about');
 const isProducts = currentPath.startsWith('/products') || currentPath.startsWith('/en/products');
-const isContact = currentPath.startsWith('/contact') || currentPath.startsWith('/en/contact');
-
-const prefix = locale === 'zh' ? '' : '/en';
+const navItems = [
+  { href: prefix || '/', label: t.t('nav.home'), active: isHome },
+  { href: `${prefix}/about`, label: t.t('nav.about'), active: isAbout },
+  { href: `${prefix}/products`, label: t.t('nav.products'), active: isProducts },
+];
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <a href={prefix || '/'} class="flex items-center space-x-2">
-        <div class="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center">
-          <span class="text-white font-bold text-lg">N</span>
-        </div>
-        <span class="text-xl font-bold text-primary-500 hidden sm:block">{t.t('site.title')}</span>
-      </a>
-
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href={prefix || '/'} class={`font-medium transition-colors ${isHome ? 'text-accent-500' : 'text-gray-700 hover:text-primary-500'}`}>
-          {t.t('nav.home')}
-        </a>
-        <a href={`${prefix}/about`} class={`font-medium transition-colors ${isAbout ? 'text-accent-500' : 'text-gray-700 hover:text-primary-500'}`}>
-          {t.t('nav.about')}
-        </a>
-        <a href={`${prefix}/products`} class={`font-medium transition-colors ${isProducts ? 'text-accent-500' : 'text-gray-700 hover:text-primary-500'}`}>
-          {t.t('nav.products')}
-        </a>
-        <a href={`${prefix}/contact`} class={`font-medium transition-colors ${isContact ? 'text-accent-500' : 'text-gray-700 hover:text-primary-500'}`}>
-          {t.t('nav.contact')}
-        </a>
-        <!-- Language Switch -->
-        <a href={langSwitchPath} class="ml-4 px-3 py-1.5 border border-gray-300 rounded-md text-sm text-gray-600 hover:bg-gray-50 transition-colors">
-          {otherLocale === 'en' ? 'English' : '中文'}
-        </a>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden flex items-center space-x-3">
-        <a href={langSwitchPath} class="px-2 py-1 border border-gray-300 rounded text-sm text-gray-600">
-          {otherLocale === 'en' ? 'EN' : '中文'}
-        </a>
-        <button id="menu-btn" class="text-gray-700 p-2" aria-label="Toggle menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+{locale === 'zh' && (
+  <div class="route-notice"><div class="page-shell"><span>{t.t('nav.buyerRoute')}</span><a href="/en/">English buyer route <span aria-hidden="true">→</span></a></div></div>
+)}
+<header class="site-header">
+  <nav class="page-shell nav-shell" aria-label={t.t('nav.mainLabel')}>
+    <a href={prefix || '/'} class="brand" aria-label={t.t('site.title')}>
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">{t.t('site.title')}</span>
+    </a>
+    <div class="desktop-nav">
+      {navItems.map((item) => (
+        <a href={item.href} class:list={["nav-link", { active: item.active }]} aria-current={item.active ? 'page' : undefined}>{item.label}</a>
+      ))}
+      <a href={`${prefix}/contact`} class="nav-cta">{t.t('nav.contact')}<span aria-hidden="true">→</span></a>
+      <a href={langSwitchPath} class="language-link" aria-label={locale === 'zh' ? 'Switch to English' : '切换中文'}>{locale === 'zh' ? 'EN' : '中文'}</a>
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
-      <a href={prefix || '/'} class="block py-2 text-gray-700 hover:text-primary-500 font-medium">{t.t('nav.home')}</a>
-      <a href={`${prefix}/about`} class="block py-2 text-gray-700 hover:text-primary-500 font-medium">{t.t('nav.about')}</a>
-      <a href={`${prefix}/products`} class="block py-2 text-gray-700 hover:text-primary-500 font-medium">{t.t('nav.products')}</a>
-      <a href={`${prefix}/contact`} class="block py-2 text-gray-700 hover:text-primary-500 font-medium">{t.t('nav.contact')}</a>
+    <div class="mobile-nav-actions">
+      <a href={langSwitchPath} class="language-link" aria-label={locale === 'zh' ? 'Switch to English' : '切换中文'}>{locale === 'zh' ? 'EN' : '中文'}</a>
+      <button id="menu-btn" class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label={t.t('nav.menu')}>
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+  <div id="mobile-menu" class="mobile-menu page-shell" hidden>
+    {navItems.map((item) => (
+      <a href={item.href} class="mobile-link" aria-current={item.active ? 'page' : undefined}>{item.label}</a>
+    ))}
+    <a href={`${prefix}/contact`} class="mobile-link mobile-link-cta">{t.t('nav.contact')}<span aria-hidden="true">→</span></a>
+  </div>
 </header>
 
 <script>
-  document.getElementById('menu-btn')?.addEventListener('click', () => {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) {
-      menu.classList.toggle('hidden');
-    }
+  const menuButton = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  menuButton?.addEventListener('click', () => {
+    if (!menu || !menuButton) return;
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    menu.hidden = open;
   });
 </script>

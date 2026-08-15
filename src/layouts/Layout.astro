@@ -13,6 +13,7 @@ export interface Props {
 const { title, description } = Astro.props;
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
+const prefix = locale === 'zh' ? '' : '/en';
 ---
 
 <!DOCTYPE html>
@@ -28,6 +29,9 @@ const t = useTranslations(locale);
   </head>
   <body>
     <Header locale={locale} />
+    <a class="mobile-rfq-bar" href={`${prefix}/contact`}>
+      <span>{t.t('nav.contact')}</span><span aria-hidden="true">→</span>
+    </a>
     <main>
       <slot />
     </main>

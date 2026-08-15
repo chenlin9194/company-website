@@ -12,41 +12,11 @@ const values = t.raw('about.values.items') as Array<{ title: string; desc: strin
 ---
 
 <Layout locale={locale} title={t.t('about.title')}>
-  <!-- Page Header -->
-  <section class="bg-gradient-to-br from-primary-500 to-primary-700 text-white py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t.t('about.title')}</h1>
-      <p class="text-gray-200 text-lg">{t.t('about.subtitle')}</p>
-    </div>
-  </section>
+  <section class="page-hero page-hero-quiet"><div class="page-shell page-hero-grid"><div><p class="eyebrow eyebrow-light">{t.t('about.eyebrow')}</p><h1>{t.t('about.title')}</h1><p>{t.t('about.subtitle')}</p></div><div class="page-hero-mark page-hero-mark-quiet" aria-hidden="true"><span>TRADING / SOURCING</span></div></div></section>
 
-  <!-- Company Intro -->
-  <section class="bg-white">
-    <div class="container-section">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-primary-500 mb-8 text-center">{t.t('about.intro.title')}</h2>
-        <div class="space-y-4 text-gray-600 leading-relaxed">
-          <p>{t.t('about.intro.p1')}</p>
-          <p>{t.t('about.intro.p2')}</p>
-          <p>{t.t('about.intro.p3')}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="section section-paper"><div class="page-shell about-layout"><div class="section-heading"><p class="eyebrow">{t.t('about.intro.eyebrow')}</p><h2>{t.t('about.intro.title')}</h2></div><div class="about-copy"><p class="large-copy">{t.t('about.intro.p1')}</p><p>{t.t('about.intro.p2')}</p><p>{t.t('about.intro.p3')}</p></div></div></section>
 
-  <!-- Values -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <h2 class="section-title">{t.t('about.values.title')}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-        {values.map((v) => (
-          <div class="text-center p-6 bg-white rounded-xl">
-            <h3 class="text-xl font-bold text-primary-500 mb-3">{v.title}</h3>
-            <p class="text-gray-500 text-sm">{v.desc}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
+  <section class="section section-ink"><div class="page-shell"><div class="section-heading heading-light"><p class="eyebrow eyebrow-light">{t.t('about.values.eyebrow')}</p><h2>{t.t('about.values.title')}</h2><p>{t.t('about.values.intro')}</p></div><div class="values-list">{values.map((value, index) => <article class="value-row"><span>0{index + 1}</span><div><h3>{value.title}</h3><p>{value.desc}</p></div></article>)}</div></div></section>
 
+  <section class="section section-sand"><div class="page-shell boundary-panel"><div><p class="eyebrow">{t.t('about.boundary.eyebrow')}</p><h2>{t.t('about.boundary.title')}</h2></div><p>{t.t('about.boundary.desc')}</p></div></section>
 </Layout>

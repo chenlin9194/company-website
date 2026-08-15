@@ -10,59 +10,101 @@ export interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const prefix = locale === 'zh' ? '' : '/en';
-
-const features = t.raw('home.features.items') as Array<{ title: string; desc: string }>;
+const audiences = t.raw('home.audiences.items') as Array<{ title: string; desc: string }>;
+const focusAreas = t.raw('home.focus.items') as Array<{ number: string; title: string; desc: string }>;
+const principles = t.raw('home.principles.items') as Array<{ title: string; desc: string }>;
+const processSteps = t.raw('home.process.steps') as Array<{ number: string; title: string; desc: string }>;
 ---
 
 <Layout locale={locale}>
   <Hero
+    eyebrow={t.t('home.hero.eyebrow')}
     title={t.t('home.hero.title')}
     subtitle={t.t('home.hero.subtitle')}
     ctaText={t.t('home.hero.cta')}
     ctaLink={`${prefix}/contact`}
-    cta2Text={t.t('home.hero.cta2')}
-    cta2Link={`${prefix}/about`}
+    secondaryText={t.t('home.hero.secondary')}
+    secondaryLink={`${prefix}/products`}
+    focusLabel={t.t('home.hero.focusLabel')}
+    focusText={t.t('home.hero.focusText')}
   />
 
-  <!-- Features -->
-  <section class="bg-gray-50">
-    <div class="container-section">
-      <h2 class="section-title">{t.t('home.features.title')}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map((feature) => (
-          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
-            <div class="w-14 h-14 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-7 h-7 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-              </svg>
-            </div>
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">{feature.title}</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">{feature.desc}</p>
-          </div>
+  <section class="section section-paper" id="who-we-help">
+    <div class="page-shell">
+      <div class="section-heading heading-split">
+        <div><p class="eyebrow">{t.t('home.audiences.eyebrow')}</p><h2>{t.t('home.audiences.title')}</h2></div>
+        <p>{t.t('home.audiences.intro')}</p>
+      </div>
+      <div class="audience-grid">
+        {audiences.map((audience, index) => (
+          <article class="audience-card">
+            <span class="card-index">0{index + 1}</span>
+            <h3>{audience.title}</h3>
+            <p>{audience.desc}</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="bg-white">
-    <div class="container-section">
-      <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-bold text-primary-500 mb-6">{t.t('home.about.title')}</h2>
-          <p class="text-gray-600 leading-relaxed mb-6">{t.t('home.about.desc')}</p>
-          <a href={`${prefix}/about`} class="btn-primary">{t.t('home.about.cta')}</a>
+  <section class="section section-ink" id="focus">
+    <div class="page-shell">
+      <div class="section-heading heading-light heading-split">
+        <div><p class="eyebrow eyebrow-light">{t.t('home.focus.eyebrow')}</p><h2>{t.t('home.focus.title')}</h2></div>
+        <p>{t.t('home.focus.intro')}</p>
+      </div>
+      <div class="focus-grid">
+        {focusAreas.map((focus) => (
+          <article class="focus-card">
+            <span class="focus-number">{focus.number}</span>
+            <h3>{focus.title}</h3>
+            <p>{focus.desc}</p>
+            <span class="focus-rule"></span>
+          </article>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="bg-gradient-to-r from-primary-600 to-primary-700">
-    <div class="container-section text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">{t.t('home.cta.title')}</h2>
-      <p class="text-gray-200 text-lg mb-8 max-w-2xl mx-auto">{t.t('home.cta.desc')}</p>
-      <a href={`${prefix}/contact`} class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors duration-200">
-        {t.t('home.cta.button')}
-      </a>
+  <section class="section section-paper" id="process">
+    <div class="page-shell">
+      <div class="section-heading">
+        <p class="eyebrow">{t.t('home.process.eyebrow')}</p>
+        <h2>{t.t('home.process.title')}</h2>
+        <p>{t.t('home.process.intro')}</p>
+      </div>
+      <div class="process-rail">
+        {processSteps.map((step, index) => (
+          <article class="process-step">
+            <div class="process-top"><span>{step.number}</span>{index < processSteps.length - 1 && <i aria-hidden="true"></i>}</div>
+            <h3>{step.title}</h3>
+            <p>{step.desc}</p>
+          </article>
+        ))}
+      </div>
     </div>
+  </section>
+
+  <section class="section section-sand" id="why-ningxin">
+    <div class="page-shell why-grid">
+      <div class="section-heading"><p class="eyebrow">{t.t('home.principles.eyebrow')}</p><h2>{t.t('home.principles.title')}</h2><p>{t.t('home.principles.intro')}</p></div>
+      <div class="principle-list">
+        {principles.map((principle, index) => (
+          <article class="principle-row"><span>0{index + 1}</span><div><h3>{principle.title}</h3><p>{principle.desc}</p></div></article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-paper about-teaser">
+    <div class="page-shell about-teaser-grid">
+      <div class="about-marker" aria-hidden="true"><span>NINGXIN</span><small>TRADING / SOURCING</small></div>
+      <div><p class="eyebrow">{t.t('home.about.eyebrow')}</p><h2>{t.t('home.about.title')}</h2><p class="large-copy">{t.t('home.about.desc')}</p><a href={`${prefix}/about`} class="text-link">{t.t('home.about.cta')} <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="page-shell cta-panel"><div><p class="eyebrow eyebrow-light">{t.t('home.cta.eyebrow')}</p><h2>{t.t('home.cta.title')}</h2><p>{t.t('home.cta.desc')}</p></div><a href={`${prefix}/contact`} class="button button-accent">{t.t('home.cta.button')}<span aria-hidden="true">→</span></a></div>
   </section>
 </Layout>

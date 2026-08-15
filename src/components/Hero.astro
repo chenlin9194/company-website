@@ -1,44 +1,50 @@
 ---
 export interface Props {
+  eyebrow: string;
   title: string;
   subtitle: string;
   ctaText: string;
   ctaLink: string;
-  cta2Text?: string;
-  cta2Link?: string;
-  bgImage?: string;
+  secondaryText: string;
+  secondaryLink: string;
+  focusLabel: string;
+  focusText: string;
 }
 
-const { title, subtitle, ctaText, ctaLink, cta2Text, cta2Link, bgImage } = Astro.props;
+const { eyebrow, title, subtitle, ctaText, ctaLink, secondaryText, secondaryLink, focusLabel, focusText } = Astro.props;
 ---
 
-<section class="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white overflow-hidden">
-  {bgImage && (
-    <div class="absolute inset-0">
-      <img src={bgImage} alt="" class="w-full h-full object-cover opacity-20" />
+<section class="hero-shell">
+  <div class="hero-grid page-shell">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span>{eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="hero-lede">{subtitle}</p>
+      <div class="hero-actions">
+        <a href={ctaLink} class="button button-accent">{ctaText}<span aria-hidden="true">→</span></a>
+        <a href={secondaryLink} class="button button-ghost">{secondaryText}</a>
+      </div>
+      <div class="hero-focus">
+        <span class="hero-focus-label">{focusLabel}</span>
+        <span>{focusText}</span>
+      </div>
     </div>
-  )}
-  <!-- Background pattern -->
-  <div class="absolute inset-0 opacity-10">
-    <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 right-10 w-96 h-96 bg-accent-400 rounded-full blur-3xl"></div>
-  </div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-    <div class="max-w-3xl">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-        {title}
-      </h1>
-      <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
-        {subtitle}
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <a href={ctaLink} class="btn-primary text-lg">{ctaText}</a>
-        {cta2Text && cta2Link && (
-          <a href={cta2Link} class="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg backdrop-blur-sm transition-colors duration-200 text-lg">
-            {cta2Text}
-          </a>
-        )}
+    <div class="hero-visual" aria-label="Abstract cable and sourcing workflow graphic" role="img">
+      <div class="visual-grid"></div>
+      <div class="visual-panel">
+        <span class="visual-kicker">RFQ → verified scope</span>
+        <div class="cable-diagram" aria-hidden="true">
+          <span class="cable-ring ring-outer"></span>
+          <span class="cable-ring ring-mid"></span>
+          <span class="cable-core"></span>
+          <span class="cable-strand strand-a"></span>
+          <span class="cable-strand strand-b"></span>
+          <span class="cable-strand strand-c"></span>
+        </div>
+        <div class="visual-caption"><span>01</span><span>clarify the request</span></div>
+        <div class="visual-caption"><span>02</span><span>check suitable supply</span></div>
+        <div class="visual-caption"><span>03</span><span>confirm quote assumptions</span></div>
       </div>
     </div>
   </div>

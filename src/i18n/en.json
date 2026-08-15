@@ -1,68 +1,133 @@
 {
   "site": {
     "title": "Ningxin Trading",
-    "description": "China sourcing and export coordination. Product availability, origin and documentation are subject to confirmed quotation.",
+    "description": "China sourcing and export coordination for fibre, cable and related RFQs.",
     "company": "Ningxin Trading"
   },
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "products": "How We Work",
     "contact": "Submit RFQ",
-    "language": "Language"
+    "buyerRoute": "For overseas buyers:",
+    "mainLabel": "Main navigation",
+    "menu": "Open navigation"
   },
   "home": {
     "hero": {
-      "title": "China Sourcing and Export Coordination",
-      "subtitle": "Share your requirements and we can check product availability and quotation with suitable Chinese manufacturers. Product, origin, documentation, MOQ, lead time and pricing are subject to confirmed quotation.",
+      "eyebrow": "Fibre and cable sourcing",
+      "title": "China sourcing support for fibre and cable RFQs",
+      "subtitle": "Send the product details, quantity and destination. Ningxin coordinates the supplier check and export steps needed to move a workable RFQ forward.",
       "cta": "Submit an RFQ",
-      "cta2": "About Us"
+      "secondary": "See how we work",
+      "focusLabel": "Current focus",
+      "focusText": "Optical fibre · optical-fibre cable · selected cable products"
     },
-    "features": {
-      "title": "How Ningxin Trading Can Help",
+    "audiences": {
+      "eyebrow": "Buyer types",
+      "title": "Built for focused procurement teams",
+      "intro": "If you already know the category, quantity or destination, send the requirement and we will organize the next supplier check.",
       "items": [
-        {"title": "Requirement Clarification", "desc": "We organize the product, quantity, destination and documentation details needed for a supplier inquiry."},
-        {"title": "Supplier Quotation Check", "desc": "After the request scope is clear, we check availability and quotation with suitable Chinese manufacturers."},
-        {"title": "Clear Quote Assumptions", "desc": "Product, origin, documentation, MOQ, lead time and pricing are confirmed case by case."},
-        {"title": "Export Coordination", "desc": "For confirmed orders, we coordinate sourcing and export communication through the agreed hand-off points."}
+        {"title": "Telecom distributors", "desc": "Compare supply options for a defined fibre or cable request."},
+        {"title": "Independent ISPs", "desc": "Turn a network requirement into a supplier-ready request."},
+        {"title": "FTTx contractors", "desc": "Coordinate project quantities, destinations and documentation."},
+        {"title": "Structured cabling companies", "desc": "Bring a clear request to the quotation stage."}
+      ]
+    },
+    "focus": {
+      "eyebrow": "Current sourcing focus",
+      "title": "Fibre and cable categories in focus",
+      "intro": "Start with the category, specification, quantity and destination. We use those details to structure the supplier check.",
+      "items": [
+        {"number": "01", "title": "Optical fibre", "desc": "For communication-fibre sourcing requests with a defined specification."},
+        {"number": "02", "title": "Optical-fibre cable", "desc": "For cable requests where construction, quantity and destination are clear."},
+        {"number": "03", "title": "Selected cable products", "desc": "For related cable requirements that can be scoped for supplier review."}
+      ]
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "From RFQ to an actionable quote",
+      "intro": "Send the requirement, fill the gaps, then let the supplier check follow a clear commercial brief.",
+      "steps": [
+        {"number": "01", "title": "Send the RFQ", "desc": "Product, quantity, destination and documents."},
+        {"number": "02", "title": "Clarify", "desc": "Close the gaps that affect the supplier check."},
+        {"number": "03", "title": "Check supply", "desc": "Coordinate a suitable Chinese supplier inquiry."},
+        {"number": "04", "title": "Confirm the quote", "desc": "Set out scope, documents and commercial terms."},
+        {"number": "05", "title": "Coordinate export", "desc": "Keep the agreed order hand-offs moving."}
+      ]
+    },
+    "principles": {
+      "eyebrow": "Why use Ningxin",
+      "title": "Why buyers use Ningxin",
+      "intro": "A focused sourcing partner keeps the buyer request, supplier conversation and commercial details aligned.",
+      "items": [
+        {"title": "Start with your requirement", "desc": "The supplier conversation begins with your product and buying context."},
+        {"title": "One organized brief", "desc": "We keep specification, quantity, destination and documents together."},
+        {"title": "Clear quote scope", "desc": "The quotation states what is included and which assumptions apply."},
+        {"title": "Coordinated next steps", "desc": "Sourcing and export communication follow the agreed hand-offs."}
       ]
     },
     "about": {
-      "title": "About Ningxin Trading",
-      "desc": "We are a China sourcing and export-coordination business, not a manufacturer. We work from your RFQ and confirm the relevant details before quotation.",
-      "cta": "Learn More"
+      "eyebrow": "About Ningxin",
+      "title": "A sourcing desk for the next supplier conversation",
+      "desc": "Ningxin Trading coordinates China sourcing and export communication for buyers evaluating fibre, cable and related supply. We start with your RFQ, clarify the requirement and organize the next supplier conversation.",
+      "cta": "See how Ningxin works"
     },
     "cta": {
-      "title": "Have an RFQ to discuss?",
-      "desc": "Send the product requirements, quantity, destination and any requested documents.",
+      "eyebrow": "Ready to compare supply?",
+      "title": "Send the requirement",
+      "desc": "Share the product description, quantity, destination and any required documents. We will organize the supplier check and next commercial step.",
       "button": "Submit an RFQ"
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "China Sourcing and Export Coordination",
+    "eyebrow": "Working boundaries",
+    "title": "About Ningxin Trading",
+    "subtitle": "China sourcing support for fibre and cable RFQs",
     "intro": {
-      "title": "Company Profile",
-      "p1": "Ningxin Trading provides China sourcing and export coordination. We are not a manufacturer.",
-      "p2": "We begin with your RFQ and clarify the product, quantity, destination and document requirements before requesting a supplier quotation.",
-      "p3": "Product availability, manufacturer or origin, documentation, MOQ, lead time and commercial terms are subject to confirmed quotation."
+      "eyebrow": "What we do",
+      "title": "A clear route from buyer brief to supplier check",
+      "p1": "Ningxin Trading provides China sourcing and export coordination for overseas buyers evaluating fibre, cable and related supply. We coordinate the supplier conversation; we do not manufacture the products we quote.",
+      "p2": "Send the product, quantity, destination and document requirements. We organize the information needed for a supplier quotation.",
+      "p3": "The quotation sets out its product scope, origin, documentation and commercial terms."
     },
     "values": {
-      "title": "Working Principles",
+      "eyebrow": "How we work",
+      "title": "How we support the buying process",
+      "intro": "The work is practical: make the request clear, keep the supplier check focused and make the quote easy to review.",
       "items": [
-        {"title": "RFQ-led", "desc": "We start with defined buyer requirements."},
-        {"title": "Case-by-case", "desc": "Supplier, product and documentation are confirmed for each inquiry."},
-        {"title": "Clear assumptions", "desc": "Quotations state their scope and assumptions."},
-        {"title": "Coordination", "desc": "We support communication through the sourcing and export process."}
+        {"title": "Start with the RFQ", "desc": "The buyer's requirement sets the scope of the work."},
+        {"title": "Keep the brief complete", "desc": "Product, quantity, destination and documents stay together."},
+        {"title": "Make the quote reviewable", "desc": "The commercial scope and assumptions are stated clearly."},
+        {"title": "Coordinate the hand-offs", "desc": "Communication stays organized through sourcing and export."}
       ]
+    },
+    "boundary": {
+      "eyebrow": "Keep the quote clear",
+      "title": "Evidence stays attached to the request",
+      "desc": "We separate the buyer's requirement from supplier information still to be confirmed, so the quotation shows its scope and assumptions."
     }
   },
   "products": {
+    "eyebrow": "The operating path",
     "title": "How We Work",
-    "subtitle": "An RFQ-led sourcing and quotation process",
+    "subtitle": "A practical route from a buyer request to a supplier-ready brief.",
+    "process": {
+      "eyebrow": "From request to quote",
+      "title": "Five steps that keep an RFQ moving",
+      "intro": "The sequence turns a buyer request into a focused supplier conversation and a quote that is easy to review.",
+      "steps": [
+        {"step": "01", "title": "RFQ", "desc": "Share the product request, quantity, destination and documents."},
+        {"step": "02", "title": "Clarify", "desc": "Close the details that affect a supplier check."},
+        {"step": "03", "title": "Supplier check", "desc": "Coordinate a suitable Chinese supplier inquiry."},
+        {"step": "04", "title": "Quote confirmation", "desc": "Set out scope, documents and commercial assumptions."},
+        {"step": "05", "title": "Export coordination", "desc": "Coordinate the agreed steps for an accepted order."}
+      ]
+    },
     "rfq": {
-      "title": "Information to include",
-      "desc": "A useful inquiry gives the supplier enough information to check availability and prepare a relevant quotation.",
+      "eyebrow": "A better inquiry",
+      "title": "What to include in an RFQ",
+      "desc": "A clear request gives the supplier check a useful commercial starting point.",
       "items": [
         "Product description, drawing or reference specification",
         "Quantity and unit",
@@ -71,27 +136,27 @@
         "Requested Incoterm or other commercial requirements, if known"
       ]
     },
-    "process": {
-      "title": "From requirement to confirmed quotation",
-      "steps": [
-        {"step": "01", "title": "Clarify", "desc": "Confirm the product, quantity, destination and required documents."},
-        {"step": "02", "title": "Check", "desc": "Ask a suitable Chinese manufacturer to check availability and quotation."},
-        {"step": "03", "title": "Confirm", "desc": "Confirm product, origin, documentation, MOQ, lead time and quotation validity."},
-        {"step": "04", "title": "Coordinate", "desc": "For an accepted order, coordinate the agreed sourcing and export hand-offs."}
-      ]
-    },
     "notice": "No product, manufacturer, origin, certification, MOQ, lead time or price is promised until it is confirmed for the specific inquiry."
   },
   "contact": {
+    "eyebrow": "Start with the requirement",
     "title": "Submit an RFQ",
-    "subtitle": "Provide the requirements needed for a supplier availability and quotation check.",
+    "subtitle": "Send the buying brief and we will organize the next supplier check.",
+    "intro": {
+      "eyebrow": "Before you send",
+      "title": "Give us the buying brief",
+      "desc": "Send what you know. We will flag the details that still need clarification.",
+      "items": ["What the product is or should do", "Quantity, unit and destination", "Required documents or standards", "Your requested commercial or delivery context"]
+    },
     "form": {
-      "title": "RFQ Details",
-      "name": "Your Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "company": "Company Name",
-      "message": "Requirements (product description, specification, quantity, destination and documents)",
+      "kicker": "RFQ / 01",
+      "title": "Request details",
+      "name": "Your name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "company": "Company name",
+      "message": "Requirements",
+      "note": "We will organize the supplier check and state the commercial scope of any quotation.",
       "submit": "Submit RFQ",
       "sending": "Sending...",
       "success": "Thank you. Your inquiry was submitted.",
@@ -99,15 +164,10 @@
     }
   },
   "footer": {
-    "quickLinks": "Quick Links",
-    "products": "How We Work",
-    "contactInfo": "RFQ",
-    "contactCta": "Submit your requirements",
-    "copyright": "© 2026 Ningxin Trading. All rights reserved"
-  },
-  "common": {
-    "readMore": "Learn More",
-    "viewAll": "View All",
-    "backToHome": "Back to Home"
+    "explore": "Explore",
+    "nextStep": "Start here",
+    "contactCta": "Send the requirement you want to source.",
+    "copyright": "© 2026 Ningxin Trading",
+    "note": "Quote scope and assumptions are stated for each RFQ."
   }
 }
