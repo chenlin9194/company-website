@@ -155,7 +155,7 @@
 
 @media (max-width: 767px) {
   .section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-  .hero-grid { min-height: 0; gap: 2rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .hero-grid { min-height: 0; gap: 1.75rem; padding-top: 3.25rem; padding-bottom: 3.25rem; }
   .hero-copy h1 { font-size: 3.15rem; }
   .hero-lede { margin-top: 1.25rem; line-height: 1.6; }
   .hero-actions { margin-top: 1.75rem; }
@@ -181,3 +181,37 @@
   .text-link { margin-top: 1rem; }
   .footer-grid { gap: 2rem; padding-top: 3rem; padding-bottom: 3rem; }
 }
+
+/* Final visual polish: restrained hero scale, clearer section rhythm, and
+   slightly stronger secondary copy on light backgrounds. */
+@media (min-width: 1024px) {
+  .hero-grid { min-height: 620px; padding-top: 5.25rem; padding-bottom: 5.25rem; }
+  .hero-copy h1 { font-size: 4.45rem; }
+  #who-we-help { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+  #focus { padding-top: 4.75rem; padding-bottom: 4.75rem; }
+  #who-we-help .audience-grid,
+  #focus .focus-grid { margin-top: 3rem; }
+  #who-we-help .audience-card { min-height: 205px; }
+  #focus .focus-card { min-height: 225px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #who-we-help { padding-top: 4.25rem; padding-bottom: 4.25rem; }
+  #focus { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+}
+
+@media (max-width: 767px) {
+  #who-we-help { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+  #focus { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+  #who-we-help .audience-grid { margin-top: 1.75rem; }
+}
+
+.section-paper .section-heading > p:last-child,
+.section-paper .audience-card p,
+.section-paper .process-step p,
+.section-paper .about-copy,
+.section-paper .contact-intro > p:last-of-type,
+.section-paper .notice-panel p,
+.section-sand .section-heading > p:last-child,
+.section-sand .principle-row p,
+.section-sand .boundary-panel > p { color: #536a70; }
